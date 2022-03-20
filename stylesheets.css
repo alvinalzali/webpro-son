@@ -9,6 +9,64 @@
   color: white;
 }
 
+nav{
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 80px;
+  width: 100%;
+  background: #21242b;
+  box-shadow: 1px 1px 15px #0d6efd;
+  z-index: 1;
+  transition: top 0.3s;
+}
+label{
+  line-height: 80px;
+  padding: 0 80px;
+  font-size: 40px;
+  color: #0d6efd;
+  letter-spacing: -1px;
+  user-select: none;
+  font-weight: bold;
+}
+nav ul{
+  list-style: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: flex;
+  line-height: 80px;
+  margin-right: 50px;
+}
+nav ul li{
+  margin: 0 5px;
+}
+nav ul li.active a{
+  color: #0089f2;
+  box-shadow: inset 0 0 5px #0d6efd,
+              inset 0 0 10px #85c3fa,
+              inset 0 0 15px #b6dbfc;
+}
+nav ul li:hover a{
+  color: #0089f2;
+  box-shadow: inset 0 0 5px #0d6efd,
+              inset 0 0 10px #85c3fa,
+              inset 0 0 15px #b6dbfc;
+}
+nav ul li a{
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  text-decoration: none;
+}
+nav ul li a.active2{
+  color: #0089f2;
+  box-shadow: inset 0 0 5px #0d6efd,
+              inset 0 0 10px #85c3fa,
+              inset 0 0 15px #b6dbfc;
+}
+
 .tombol-carousel {
   top: 60px;
   bottom: 60px;
@@ -95,7 +153,6 @@ span.text {
   }
 
 }
-/* Number Counter Galang */
 
 .card_h-100_navigasi img{
 
@@ -111,4 +168,3 @@ span.text {
 .card_h-100_navigasi p{
     color: #fff;
 }
-
