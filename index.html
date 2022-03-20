@@ -8,6 +8,7 @@
     <meta name="author" content="Alvin, Achyar, Sony, Galang, Farchan">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./resource/logos.png" type="image/png">
     <title>Sony Wijaya Pictures</title>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
@@ -193,87 +194,14 @@
 
     <!-- counter -->
     <div class="container-fluid space-container">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js">
-        </script>
-        <div class="personality">
-            <div class="personality-overlay">
-                <div class="statsbar">
-                    <div class="stat-one">
-                        <div class="stat-number" data-n="200"><span class="Single">0</span>
-                        </div>
-                        <div class="stat-title">CUPS OF TEA A DAY</div>
-                    </div>
-                    <div class="stat-two">
-                        <div class="stat-number" data-n="60">0</div>
-                        <div class="stat-title">MINIMUM HOURS OF SLEEP A WEEK</div>
-                    </div>
-                    <div class="stat-three">
-                        <div class="stat-number" data-n="10">0</div>
-                        <div class="stat-title">CUPS OF TEA A DAY</div>
-                    </div>
-                    <div class="stat-four">
-                        <div class="stat-number" data-n="10" data-sym="%">0</div>
-                        <div class="stat-title">HOURS SLEEP A WEEK</div>
-                    </div>
-                </div>
-                <div class="stat-five">
-                    <div class="stat-number" data-n="19" data-sym="k">0</div>
-                    <div class="stat-title">DO STUFF</div>
-                </div>
-            </div>
-        </div>
-
     </div>
 
 
     <!-- Script counter -->
-    <script>
-        $(function () {
-            var fx = function fx() {
-                var dfd = $(".stat-number").map(function (i, el) {
-                    var data = parseInt(this.dataset.n, 10);
-                    var props = {
-                        "from": {
-                            "count": 0
-                        },
-                        "to": {
-                            "count": data
-                        }
-                    };
-                    return $(props.from).animate(props.to, {
-                        duration: 1000 * 1,
-                        step: function (now, fx) {
-                            $(el).text(Math.ceil(now));
-                        },
-                        complete: function () {
-                            if (el.dataset.sym !== undefined) {
-                                el.textContent = el.textContent.concat(el.dataset.sym)
-                            }
-                        }
-                    }).promise();
-                }).toArray();
-                // return jQuery promise when all animations complete
-                return $.when.apply($, dfd);
-            };
 
-            var reset = function reset() {
-                console.log($(this).scrollTop());
-                // do stuff when window `.scrollTop()` > 75
-                if ($(this).scrollTop() > 50) {
-                    // turn off scroll event so `fx` not called
-                    // during ongoing animation
-                    $(this).off("scroll");
-                    // when all animations complete
-                    fx()
-                }
-            };
-            // if `fx` should only be called once ,
-            // change `.on()` to `.one()` ,
-            // remove `.then()` callback following `fx()`
-            // within `reset`
-            $(window).on("scroll", reset);
-        });
-    </script>
 </body>
+<footer>
+
+</footer>
 
 </html>
