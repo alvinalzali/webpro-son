@@ -42,8 +42,7 @@
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Other
+                                data-bs-toggle="dropdown" aria-expanded="false">    Other
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <li><a class="dropdown-item" href="#">Social Media</a></li>
@@ -78,7 +77,8 @@
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <div class="embed-responsive embed-responsive-16by9">
-                        <iframe width="100%" height="500" src="https://www.youtube.com/embed/odM92ap8_c0"
+                        <iframe width="100%" height="500" src="https://www.youtube.com/embed/odM92ap8_c0?autoplay=1"
+
                             title="YouTube video player" frameborder="0" allow='autoplay'
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen></iframe>
@@ -114,6 +114,29 @@
         </div>
     </div>
 
+
+    <!--Number Counter Galang-->
+    <div class="wrapper">
+        <div class="container">
+            <i class="fas fa-smile-beam"></i>
+            <span class="num" data-val="132">000</span>
+            <span class="text">Movies</span>
+        </div>
+        <div class="container">
+            <i class="fas fa-list"></i>
+            <span class="num" data-val="125">000</span>
+            <span class="text">Series</span>
+        </div>
+        <div class="container">
+            <i class="fas fa-star"></i>
+            <span class="num" data-val="1023">000</span>
+            <span class="text">Viewers</span>
+        </div>
+    </div>
+    <!-- Script -->
+    <script src="./resource/script.js"></script>
+    <!--Number Counter Galang-->
+
     <!-- Sub Judul Card -->
     <div class="container-fluid space-container">
         <!-- <img src="./resource/logos.png" alt="" width="30" height="24" class="d-inline-block align-text-top logo"> -->
@@ -139,6 +162,7 @@
                 </div>
             </div>
             <div class="col">
+
                 <div class="card_h-100_navigasi">
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvJznVehDbSUPihJbSTNwH8Tgnvh4ZDxs0J4hV06wOvHHidHul" class="card-img-top" alt="...">
                     <div class="card-body">
@@ -154,6 +178,7 @@
                 </div>
             </div>
             <div class="col">
+
                 <div class="card_h-100_navigasi">
                     <img src="https://m.media-amazon.com/images/I/71NaQGqIhAL._AC_SY679_.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
@@ -161,7 +186,7 @@
                         <p class="card-text">In 2045 the planet is on the brink of chaos and collapse, but people find salvation in the OASIS: an expansive 
                             virtual reality universe created by eccentric James Halliday. When Halliday dies, he promises his immense fortune to the first person 
                             to discover a digital Easter egg that's hidden somewhere in the OASIS. When young Wade Watts joins the contest, he finds himself becoming 
-                            an unlikely hero in a reality-bending treasure hunt through a fantastical world of mystery, discovery and danger.</p>
+                            an unlikely hero in a reality-bending treasure hunt through a fantastical world of mystery, discovery and danger.</p
                     </div>
                     <div class="card-footer">
                         <small class="text-muted">Last updated 3 mins ago</small>
@@ -183,6 +208,7 @@
                     </div>
                 </div>
             </div>
+
         </div>
     </div>
 
@@ -192,16 +218,58 @@
         <a class="navbar-brand">UPCOMING MOVIES</a>
     </div>
 
-    <!-- counter -->
-    <div class="container-fluid space-container">
-    </div>
-
-
     <!-- Script counter -->
+    <script>
+        $(function () {
+            var fx = function fx() {
+                var dfd = $(".stat-number").map(function (i, el) {
+                    var data = parseInt(this.dataset.n, 10);
+                    var props = {
+                        "from": {
+                            "count": 0
+                        },
+                        "to": {
+                            "count": data
+                        }
+                    };
+                    return $(props.from).animate(props.to, {
+                        duration: 1000 * 1,
+                        step: function (now, fx) {
+                            $(el).text(Math.ceil(now));
+                        },
+                        complete: function () {
+                            if (el.dataset.sym !== undefined) {
+                                el.textContent = el.textContent.concat(el.dataset.sym)
+                            }
+                        }
+                    }).promise();
+                }).toArray();
+                // return jQuery promise when all animations complete
+                return $.when.apply($, dfd);
+            };
 
+            var reset = function reset() {
+                console.log($(this).scrollTop());
+                // do stuff when window `.scrollTop()` > 75
+                if ($(this).scrollTop() > 50) {
+                    // turn off scroll event so `fx` not called
+                    // during ongoing animation
+                    $(this).off("scroll");
+                    // when all animations complete
+                    fx()
+                }
+            };
+            // if `fx` should only be called once ,
+            // change `.on()` to `.one()` ,
+            // remove `.then()` callback following `fx()`
+            // within `reset`
+            $(window).on("scroll", reset);
+        });
+    </script>
 </body>
 <footer>
 
 </footer>
+
 
 </html>
