@@ -17,4 +17,16 @@
 .space-container {
     margin-top: 40px;
 }
-/* counter */
+
+.card_h-100_navigasi img{
+    width: 350px;
+    height: 500px;
+}
+
+.card_h-100_navigasi h5{
+    color: #fff;
+}
+
+.card_h-100_navigasi p{
+    color: #fff;
+}
