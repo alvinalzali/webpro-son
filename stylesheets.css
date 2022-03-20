@@ -93,13 +93,16 @@ span.text {
     height: 25vmin;
     font-size: 8px;
   }
+
 }
 /* Number Counter Galang */
 
 .card_h-100_navigasi img{
+
     width: 350px;
     height: 500px;
 }
+
 
 .card_h-100_navigasi h5{
     color: #fff;
@@ -108,3 +111,4 @@ span.text {
 .card_h-100_navigasi p{
     color: #fff;
 }
+
