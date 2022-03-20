@@ -16,135 +16,17 @@
 
 .space-container {
     margin-top: 40px;
-
-/* counter */
-
-.pb100 {
-    padding-bottom: 100px;
 }
 
-.pt100 {
-    padding-top: 100px;
+.card_h-200_navigasi img{
+    width: 350px;
+    height: 500px;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: 'Lato', sans-serif;
-    padding: 0;
-    margin: 0;
+.card_h-200_navigasi h5{
+    color: white;
 }
 
-
-.counter-section {
-    background: url(bg.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    position: relative;
-    background-size: cover;
-}
-
-.counter-overlay {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.89);
-}
-
-.count-items {
-    text-align: center;
-    padding: 50px 20px;
-    border-radius: 100%;
-    border-bottom: 3px dotted #666;
-    border-top: 3px dotted #666;
-}
-
-.count-items:hover.count-items i {
-    color: #ffaf53
-}
-
-.count-items:hover.count-items h2 {
-    color: #f35b68
-}
-
-.count-items i {
-    color: #f35b68;
-    font-size: 36px;
-}
-
-.count-items span {
-    color: #fff;
-    font-size: 36px;
-    padding: 20px 0px;
-    display: inherit;
-    font-weight: 700;
-}
-
-.count-items h2 {
-    font-size: 16px;
-    color: #ffaf53;
-}
-
-.funfact {
-    margin-top: 50px;
-    text-align: right;
-}
-
-.funfact h2 {
-    color: #ffaf53;
-    font-size: 42px;
-    font-weight: 700;
-    position: relative;
-
-}
-
-.funfact h2:after {
-    position: absolute;
-    content: "";
-    width: 115px;
-    height: 2px;
-    background: #fff;
-    right: 0px;
-    bottom: -24px;
-
-
-}
-
-.funfact p {
-    line-height: 24px;
-    font-size: 16px;
-    margin-top: 50px;
-    color: #e1e1e1;
-}
-
-a.site-btn.transition-ease.quote-btn {
-    padding: 14px 28px;
-    background: #f35b68;
-}
-
-.site-btn.header-quote-btn:hover {
-
-    background: transparent;
-    color: #252525;
-
-}
-
-.site-btn.header-quote-btn {
-    padding: 14px 28px;
-    background: #f35b68;
-    background: linear-gradient(to right, #f35b68, #ffaf53);
-    margin-left: 20px;
-    text-transform: capitalize;
-    background-origin: border-box;
-}
-
-#marquee-container {
-    padding: 20px 0px;
-}
-
-.fix {
-    overflow: hidden;
+.card_h-200_navigasi p{
+    color: white;
 }
