@@ -16,10 +16,14 @@
     </script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="./stylesheets.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+        integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet"
+        id="bootstrap-css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,400i,500,500i,600&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='./resource/stylesheets.css'>
 </head>
 
 <body style="background-color: #22262f;">
@@ -28,9 +32,9 @@
             <label>SonsPictures</label>
             <ul>
                 <li class="active"><a href="#">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#blog">Blogs</a></li>
-                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#about">Movies</a></li>
+                <li><a href="#blog">Series</a></li>
+                <li><a href="#gallery">News</a></li>
                 <li><a href="#services">Services</a></li>
             </ul>
         </nav>
@@ -108,229 +112,172 @@
     </div>
     <!-- Script -->
     <script src="./resource/script.js"></script>
-    <!--Number Counter Galang-->
 
-    <!-- Sub Judul Card -->
-    <div class="container-fluid space-container">
-        <!-- <img src="./resource/logos.png" alt="" width="30" height="24" class="d-inline-block align-text-top logo"> -->
-        <a class="navbar-brand">UPCOMING MOVIES</a>
-    </div>
 
-    <!-- card -->
-    <div class="container-fluid space-container">
-        <div class="row row-cols-1 row-cols-md-4 g-4">
-            <div class="col">
-                <div class="card_h-100_navigasi">
-                    <img src="https://mydirtsheet.files.wordpress.com/2022/03/batmane5xkeyxkfqcgdeqxvyodk4otc3mty40._v1_.jpg"
-                        class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">The Batman</h5>
-                        <p class="card-text">Batman ventures into Gotham City's underworld when a sadistic killer leaves
-                            behind
-                            a trail of cryptic clues. As the evidence begins to lead closer to home and the scale of the
-                            perpetrator's
-                            plans become clear, he must forge new relationships, unmask the culprit and bring justice to
-                            the abuse of power
-                            and corruption that has long plagued the metropolis.</p>
-                    </div>
-                    <div class="card-footer">
-                        <small class="text-muted">Last updated 3 mins ago</small>
-                    </div>
-                </div>
+    <div class="movie_card" id="bright">
+        <div class="info_section">
+            <div class="movie_header">
+                <img class="locandina"
+                    src="https://movieplayer.net-cdn.it/t/images/2017/12/20/bright_jpg_191x283_crop_q85.jpg" />
+                <h1>Bright</h1>
+                <h4>2017, David Ayer</h4>
+                <span class="minutes">45 min/ep</span>
+                <p class="type">Action, Crime, Fantasy</p>
             </div>
-            <div class="col">
-                <div class="card_h-100_navigasi">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvJznVehDbSUPihJbSTNwH8Tgnvh4ZDxs0J4hV06wOvHHidHul"
-                        class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Dune</h5>
-                        <p class="card-text">Paul Atreides, a brilliant and gifted young man born into a great destiny
-                            beyond his understanding,
-                            must travel to the most dangerous planet in the universe to ensure the future of his family
-                            and his people. As malevolent
-                            forces explode into conflict over the planet's exclusive supply of the most precious
-                            resource in existence, only those who
-                            can conquer their own fear will survive.</p>
-                    </div>
-                    <div class="card-footer">
-                        <small class="text-muted">Last updated 3 mins ago</small>
-                    </div>
-                </div>
+            <div class="movie_desc">
+                <p class="text">
+                    Set in a world where fantasy creatures live side by side with humans. A human cop is forced to work
+                    with an Orc to find a weapon everyone is prepared to kill for.
+                </p>
             </div>
-            <div class="col">
-                <div class="card_h-100_navigasi">
-                    <img src="https://m.media-amazon.com/images/I/71NaQGqIhAL._AC_SY679_.jpg" class="card-img-top"
-                        alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Ready Player One</h5>
-                        <p class="card-text">In 2045 the planet is on the brink of chaos and collapse, but people find
-                            salvation in the OASIS: an expansive
-                            virtual reality universe created by eccentric James Halliday. When Halliday dies, he
-                            promises his immense fortune to the first person
-                            to discover a digital Easter egg that's hidden somewhere in the OASIS. When young Wade Watts
-                            joins the contest, he finds himself becoming
-                            an unlikely hero in a reality-bending treasure hunt through a fantastical world of mystery,
-                            discovery and danger.</p>
-                    </div>
-                    <div class="card-footer">
-                        <small class="text-muted">Last updated 3 mins ago</small>
-                    </div>
-                </div>
+            <div class="movie_extras">
+                <ul>
+                    <li><span class='extras'>1 Season </span></li>
+                    <li><span class='extras'>12 Eps </span></li>
+                    <li><span class='extras'>Completed </span></li>
+                </ul>
             </div>
-
-            <div class="col">
-                <div class="card_h-100_navigasi">
-                    <img src="https://p4.wallpaperbetter.com/wallpaper/764/590/391/inception-leonardo-dicaprio-movie-posters-2400x3500-entertainment-movies-hd-art-wallpaper-preview.jpg"
-                        class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Inception</h5>
-                        <p class="card-text">Dom Cobb (Leonardo DiCaprio) is a thief with the rare ability to enter
-                            people's dreams and steal their secrets from their subconscious.
-                            His skill has made him a hot commodity in the world of corporate espionage but has also cost
-                            him everything he loves. Cobb gets a chance at redemption
-                            when he is offered a seemingly impossible task: Plant an idea in someone's mind. If he
-                            succeeds, it will be the perfect crime, but a dangerous enemy
-                            anticipates Cobb's every move.</p>
-                    </div>
-                    <div class="card-footer">
-                        <small class="text-muted">Last updated 3 mins ago</small>
-                    </div>
-                </div>
-            </div>
-
         </div>
-    </div>
-    </div>
-
-    <!-- Sub Judul Counter TV SHOW-->
-    <div class="container-fluid space-container">
-        <!-- <img src="./resource/logos.png" alt="" width="30" height="24" class="d-inline-block align-text-top logo"> -->
-        <a class="navbar-brand">TV SHOW</a>
+        <div class="blur_back bright_back"></div>
     </div>
 
-    <!-- card TV show -->
-    <div class="container-fluid space-container">
-        <div class="row row-cols-1 row-cols-md-4 g-4">
-            <div class="col">
-                <div class="card_h-100_navigasi">
-                    <img src="./resource/attongalang.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Attack On Titan</h5>
-                        <p class="card-text">Attack on Titan bercerita tentang umat manusia yang dibantai sejak
-                            berabad-abad yang lalu hingga hampir punah oleh makhluk mengerikan menyerupai manusia yang
-                            disebut Titan.
-                            Hal ini memaksa manusia untuk bersembunyi dan diam dalam ketakutan di balik tembok
-                            konsentris yang sangat tinggi dan besar.</p>
-                    </div>
-                    <div class="card-footer">
-                        <small class="text-muted">Last updated 30 mins ago</small>
-                    </div>
-                </div>
+    <div class="movie_card" id="tomb">
+        <div class="info_section">
+            <div class="movie_header">
+                <img class="locandina" src="https://mr.comingsoon.it/imgdb/locandine/235x336/53750.jpg" />
+                <h1>Tomb Raider</h1>
+                <h4>2018, Roar Uthaug</h4>
+                <span class="minutes">45 min/ep</span>
+                <p class="type">Action, Fantasy</p>
             </div>
-            <div class="col">
-                <div class="card_h-100_navigasi">
-                    <img src="./resource/joose.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Joose The Tiger and The Fish</h5>
-                        <p class="card-text">Film ini bercerita tentang Tsuneo Suzukawa (Taishi Nakagawa), seorang
-                            mahasiswa yang bekerja paruh waktu di toko alat-alat selam bersama teman-temannya.
-                            Meski kekurangan uang, Tsuneo yang sedang belajar menjadi ahli biologi kelautan bermimpi
-                            untuk bisa pergi menyelam di Meksiko.</p>
-                    </div>
-                    <div class="card-footer">
-                        <small class="text-muted">Last updated 45 mins ago</small>
-                    </div>
-                </div>
+            <div class="movie_desc">
+                <p class="text">
+                    Lara Croft, the fiercely independent daughter of a missing adventurer, must push herself beyond her
+                    limits when she finds herself on the island where her father disappeared.
+                </p>
             </div>
-            <div class="col">
-                <div class="card_h-100_navigasi">
-                    <img src="./resource/psyco.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Psycho Pass 3</h5>
-                        <p class="card-text">Sistem Sybil, hakim tertinggi manusia di Jepang, sedang dirusak oleh
-                            sindikat kriminal yang mengumpulkan kekayaan dan kekuasaan dalam bayang-bayang.
-                            Sekarang, agen Bifrost Kouichi Azusawa meluncurkan serangan langsung ke Departemen
-                            Investigasi Kriminal dengan menduduki markasnya dan menyandera Inspektur Shindou dan semua
-                            orang bersamanya.</p>
-                    </div>
-                    <div class="card-footer">
-                        <small class="text-muted">Last updated 1 hour ago</small>
-                    </div>
-                </div>
+            <div class="movie_extras">
+                <ul>
+                    <li><span class='extras'>1 Season </span></li>
+                    <li><span class='extras'>12 Eps </span></li>
+                    <li><span class='extras'>Completed </span></li>
+                </ul>
             </div>
+        </div>
+        <div class="blur_back tomb_back"></div>
+    </div>
 
-            <div class="col">
-                <div class="card_h-100_navigasi">
-                    <img src="./resource/barakamon.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Barakamon</h5>
-                        <p class="card-text">Menceritakan kehidupan Handa Seishuu, seorang kaligrafer yang karena suatu
-                            hal, terlempar ke sebuah pulau terpencil yang hanya punya satu telpon untuk satu desa
-                            sendirian.
-                            Disana ia berusaha mengasah kembali kemampuan kaligrafinya ditemani dengan teman-teman
-                            barunya di pulau tersebut. Salah satunya adalah Naru, bocah kampung setempat.</p>
-                    </div>
-                    <div class="card-footer">
-                        <small class="text-muted">Last updated 2 days ago</small>
-                    </div>
+    <div class="movie_card" id="ave">
+        <div class="info_section">
+            <div class="movie_header">
+                <img class="locandina" src="https://mr.comingsoon.it/imgdb/locandine/235x336/53715.jpg" />
+                <h1>Black Panther</h1>
+                <h4>2018, Ryan Coogler</h4>
+                <span class="minutes">45 min/ep</span>
+                <p class="type">Action, Adventure, Sci-Fi</p>
+            </div>
+            <div class="movie_desc">
+                <p class="text">
+                    T'Challa, the King of Wakanda, rises to the throne in the isolated, technologically advanced African
+                    nation, but his claim is challenged by a vengeful outsider who was a childhood victim of T'Challa's
+                    father's mistake.
+                </p>
+            </div>
+            <div class="movie_extras">
+                <ul>
+                    <li><span class='extras'>1 Season </span></li>
+                    <li><span class='extras'>12 Eps </span></li>
+                    <li><span class='extras'>Completed </span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="blur_back ave_back"></div>
+    </div>
+    <!-- -->
+    <h1 class="main-header">Movies You Might Like</h1>
+    <div class="movie-slider">
+
+
+        <div class="movie-list">
+            <div class="movie-card">
+                <img src="https://m.media-amazon.com/images/M/MV5BMWM5YzhmNGMtZTI4Ny00MGM4LThkYjAtMDIyMTEwNTQyZmQ1XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_UX182_CR0,0,182,268_AL_.jpg"
+                    alt="movie poster" class="movie-poster">
+                <div class="movie-info">
+                    <h1 class="movie-title">I am not okay with this</h1>
+                    <button class="btn-watch">Watch Now</button>
+                </div>
+            </div>
+            <div class="movie-card">
+                <img src="https://m.media-amazon.com/images/M/MV5BMjEzMjcxNjA2Nl5BMl5BanBnXkFtZTgwMjAxMDM2NzM@._V1_UX182_CR0,0,182,268_AL_.jpg"
+                    alt="movie poster" class="movie-poster">
+                <div class="movie-info">
+                    <h1 class="movie-title">Booksmart</h1>
+                    <button class="btn-watch">Watch Now</button>
+                </div>
+            </div>
+            <div class="movie-card">
+                <img src="https://m.media-amazon.com/images/M/MV5BZGVmY2RjNDgtMTc3Yy00YmY0LTgwODItYzBjNWJhNTRlYjdkXkEyXkFqcGdeQXVyMjM4NTM5NDY@._V1_UX182_CR0,0,182,268_AL_.jpg"
+                    alt="movie poster" class="movie-poster">
+                <div class="movie-info">
+                    <h1 class="movie-title">Marriage Story</h1>
+                    <button class="btn-watch">Watch Now</button>
+                </div>
+            </div>
+            <div class="movie-card">
+                <img src="https://m.media-amazon.com/images/M/MV5BMGUyM2ZiZmUtMWY0OC00NTQ4LThkOGUtNjY2NjkzMDJiMWMwXkEyXkFqcGdeQXVyMzY0MTE3NzU@._V1_UY268_CR0,0,182,268_AL_.jpg"
+                    alt="movie poster" class="movie-poster">
+                <div class="movie-info">
+                    <h1 class="movie-title">The Irishman</h1>
+                    <button class="btn-watch">Watch Now</button>
+                </div>
+            </div>
+            <div class="movie-card">
+                <img src="https://m.media-amazon.com/images/M/MV5BMTQxMTgyNDc5M15BMl5BanBnXkFtZTcwMzk4OTM5Mw@@._V1_UX182_CR0,0,182,268_AL_.jpg"
+                    alt="movie poster" class="movie-poster">
+                <div class="movie-info">
+                    <h1 class="movie-title">The Company Men</h1>
+                    <button class="btn-watch">Watch Now</button>
+                </div>
+            </div>
+            <div class="movie-card">
+                <img src="https://m.media-amazon.com/images/M/MV5BNGVjNWI4ZGUtNzE0MS00YTJmLWE0ZDctN2ZiYTk2YmI3NTYyXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_UX182_CR0,0,182,268_AL_.jpg"
+                    alt="movie poster" class="movie-poster">
+                <div class="movie-info">
+                    <h1 class="movie-title">Joker</h1>
+                    <button class="btn-watch">Watch Now</button>
+                </div>
+            </div>
+            <div class="movie-card">
+                <img src="https://m.media-amazon.com/images/M/MV5BMTc5MDE2ODcwNV5BMl5BanBnXkFtZTgwMzI2NzQ2NzM@._V1_UX182_CR0,0,182,268_AL_.jpg"
+                    alt="movie poster" class="movie-poster">
+                <div class="movie-info">
+                    <h1 class="movie-title">Avengers: Endgame</h1>
+                    <button class="btn-watch">Watch Now</button>
+                </div>
+            </div>
+            <div class="movie-card">
+                <img src="https://m.media-amazon.com/images/M/MV5BMGUwZjliMTAtNzAxZi00MWNiLWE2NzgtZGUxMGQxZjhhNDRiXkEyXkFqcGdeQXVyNjU1NzU3MzE@._V1_UX182_CR0,0,182,268_AL_.jpg"
+                    alt="movie poster" class="movie-poster">
+                <div class="movie-info">
+                    <h1 class="movie-title">Knives Out</h1>
+                    <button class="btn-watch">Watch Now</button>
+                </div>
+            </div>
+            <div class="movie-card">
+                <img src="https://m.media-amazon.com/images/M/MV5BYWZjMjk3ZTItODQ2ZC00NTY5LWE0ZDYtZTI3MjcwN2Q5NTVkXkEyXkFqcGdeQXVyODk4OTc3MTY@._V1_UX182_CR0,0,182,268_AL_.jpg"
+                    alt="movie poster" class="movie-poster">
+                <div class="movie-info">
+                    <h1 class="movie-title">Parasite</h1>
+                    <button class="btn-watch">Watch Now</button>
                 </div>
             </div>
 
         </div>
     </div>
 
-    <!-- Script counter -->
-    <script>
-        $(function () {
-            var fx = function fx() {
-                var dfd = $(".stat-number").map(function (i, el) {
-                    var data = parseInt(this.dataset.n, 10);
-                    var props = {
-                        "from": {
-                            "count": 0
-                        },
-                        "to": {
-                            "count": data
-                        }
-                    };
-                    return $(props.from).animate(props.to, {
-                        duration: 1000 * 1,
-                        step: function (now, fx) {
-                            $(el).text(Math.ceil(now));
-                        },
-                        complete: function () {
-                            if (el.dataset.sym !== undefined) {
-                                el.textContent = el.textContent.concat(el.dataset.sym)
-                            }
-                        }
-                    }).promise();
-                }).toArray();
-                // return jQuery promise when all animations complete
-                return $.when.apply($, dfd);
-            };
-
-            var reset = function reset() {
-                console.log($(this).scrollTop());
-                // do stuff when window `.scrollTop()` > 75
-                if ($(this).scrollTop() > 50) {
-                    // turn off scroll event so `fx` not called
-                    // during ongoing animation
-                    $(this).off("scroll");
-                    // when all animations complete
-                    fx()
-                }
-            };
-            // if `fx` should only be called once ,
-            // change `.on()` to `.one()` ,
-            // remove `.then()` callback following `fx()`
-            // within `reset`
-            $(window).on("scroll", reset);
-        });
-    </script>
 </body>
 <footer>
 
 </footer>
-
 
 </html>

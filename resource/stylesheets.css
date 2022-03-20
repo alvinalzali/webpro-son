@@ -1,0 +1,478 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+html, body {
+  margin: 0;
+
+  font-family: "Montserrat", helvetica, arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:700|Noto+Sans|Open+Sans:500,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat',sans-serif;
+  scroll-behavior: smooth;
+}
+body::selection{
+  color: white;
+  background: #0089f2;
+}
+body::-webkit-scrollbar{
+  width: 16px;
+}
+body::-webkit-scrollbar-track{
+  background: #e6e6e6;
+  border-radius: 10px;
+  box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+body::-webkit-scrollbar-thumb{
+  border-radius: 10px;
+  box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  background: linear-gradient(#3498db,#9b59b6);
+}
+body::-webkit-scrollbar-thumb:hover{
+  background: linear-gradient(#2691d9,#954eb1);
+}
+
+nav{
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 80px;
+  width: 100%;
+  background: #21242b;
+  box-shadow: 1px 1px 15px #0d6efd;
+  z-index: 1;
+  transition: top 0.3s;
+}
+label{
+  line-height: 80px;
+  padding: 0 80px;
+  font-size: 40px;
+  color: #0d6efd;
+  letter-spacing: -1px;
+  user-select: none;
+  font-weight: bold;
+}
+nav ul{
+  list-style: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: flex;
+  line-height: 80px;
+  margin-right: 50px;
+}
+nav ul li{
+  margin: 0 5px;
+}
+nav ul li.active a{
+  color: #0089f2;
+  box-shadow: inset 0 0 5px #0d6efd,
+              inset 0 0 10px #85c3fa,
+              inset 0 0 15px #b6dbfc;
+}
+nav ul li:hover a{
+  color: #0089f2;
+  box-shadow: inset 0 0 5px #0d6efd,
+              inset 0 0 10px #85c3fa,
+              inset 0 0 15px #b6dbfc;
+}
+nav ul li a{
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  text-decoration: none;
+  font-weight: bold;
+}
+nav ul li a.active2{
+  color: #0089f2;
+  box-shadow: inset 0 0 5px #0d6efd,
+              inset 0 0 10px #85c3fa,
+              inset 0 0 15px #b6dbfc;
+}
+
+.content{
+  position: absolute;
+  top: 100px;
+  padding: 0 80px;
+}
+/* Number Counter Galang */
+.wrapper {
+  margin-top: 12%;
+  position: relative;
+  width: 80vw;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+}
+.container {
+  width: 28vmin;
+  height: 28vmin;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 1em 0;
+  position: relative;
+  font-size: 16px;
+  border-radius: 0.5em;
+  background-color: #21242b;
+  border-bottom: 10px solid #0d6efd;
+}
+i {
+  color: #0d6efd;
+  font-size: 2.5em;
+  text-align: center;
+}
+span.num {
+  color: #ffffff;
+  display: grid;
+  place-items: center;
+  font-weight: 600;
+  font-size: 3em;
+}
+span.text {
+  color: #e0e0e0;
+  font-size: 1em;
+  text-align: center;
+  pad: 0.7em 0;
+  font-weight: 400;
+  line-height: 0;
+}
+@media screen and (max-width: 1024px) {
+  .wrapper {
+    width: 85vw;
+  }
+  .container {
+    height: 26vmin;
+    width: 26vmin;
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .wrapper {
+    width: 90vw;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .container {
+    width: calc(50% - 40px);
+    height: 30vmin;
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .wrapper {
+    gap: 15px;
+  }
+  .container {
+    width: 100%;
+    height: 25vmin;
+    font-size: 8px;
+  }
+
+}
+.movie_card {
+  position: relative;
+  display: block;
+  width: 850px;
+  margin: 70px auto;
+  height: auto;
+  margin: 30px auto;
+  overflow: hidden;
+  border-radius: 10px;
+  transition: all 0.4s;
+}
+.movie_card:hover {
+  transform: scale(1.02);
+  transition: all 0.4s;
+}
+.movie_card .info_section {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-blend-mode: multiply;
+  z-index: 2;
+  border-radius: 10px;
+}
+.movie_card .info_section .movie_header {
+  position: relative;
+  padding: 25px;
+  height: 40%;
+}
+.movie_card .info_section .movie_header h1 {
+  color: #fff;
+  font-weight: 400;
+}
+.movie_card .info_section .movie_header h4 {
+  color: #9ac7fa;
+  font-weight: 400;
+}
+.movie_card .info_section .movie_header .minutes {
+  display: inline-block;
+  margin-top: 10px;
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.13);
+}
+.movie_card .info_section .movie_header .type {
+  display: inline-block;
+  color: #cee4fd;
+  margin-left: 10px;
+}
+.movie_card .info_section .movie_header .locandina {
+  position: relative;
+  float: left;
+  margin-right: 20px;
+  height: 120px;
+  box-shadow: 0 0 20px -10px rgba(0, 0, 0, 0.5);
+}
+.movie_card .info_section .movie_desc {
+  padding: 25px;
+  height: 50%;
+}
+.movie_card .info_section .movie_desc .text {
+  color: #cfd6e1;
+}
+.movie_card .info_section .movie_extras {
+  height: 10%;
+  padding-left: 15px;
+  padding-bottom: 20px;
+}
+.movie_card .info_section .movie_social ul {
+  list-style: none;
+  padding: 0;
+}
+.movie_card .info_section .movie_extras ul li {
+  display: inline-block;
+  color: rgba(255, 255, 255, 0.4);
+  transition: color 0.3s;
+  transition-delay: 0.15s;
+  margin: 0 10px;
+}
+.movie_card .info_section .movie_extras ul li:hover {
+  transition: color 0.3s;
+  color: rgba(255, 255, 255, 0.8);
+}
+.movie_card .info_section .movie_extras ul li i {
+  font-size: 19px;
+  cursor: pointer;
+}
+.movie_card .info_section .movie_extras .extras {
+  display: inline-block;
+  margin-top: 10px;
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.13);
+}
+.movie_card .blur_back {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  height: 100%;
+  right: 0;
+  background-size: cover;
+  border-radius: 11px;
+}
+
+@media screen and (min-width: 768px) {
+  .movie_header {
+    width: 60%;
+  }
+
+  .movie_desc {
+    width: 50%;
+  }
+
+  .info_section {
+    background: linear-gradient(to right, #0d0d0c 50%, transparent 100%);
+  }
+
+  .blur_back {
+    width: 80%;
+    background-position: -100% 10% !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .movie_card {
+    width: 95%;
+    margin: 70px auto;
+    min-height: 350px;
+    height: auto;
+  }
+
+  .blur_back {
+    width: 100%;
+    background-position: 50% 50% !important;
+  }
+
+  .movie_header {
+    width: 100%;
+    margin-top: 85px;
+  }
+
+  .movie_desc {
+    width: 100%;
+  }
+ .movie_desc .text {
+    width: 90%;
+  }
+  .info_section {
+    background: linear-gradient(to top, #141413 50%, transparent 100%);
+    display: inline-grid;
+  }
+}
+#bright {
+  box-shadow: 0px 0px 150px -45px rgba(255, 51, 0, 0.5);
+}
+#bright:hover {
+  box-shadow: 0px 0px 120px -55px rgba(255, 51, 0, 0.5);
+}
+
+.bright_back {
+  background: url("https://occ-0-2433-448.1.nflxso.net/art/cd5c9/3e192edf2027c536e25bb5d3b6ac93ced77cd5c9.jpg");
+}
+
+#tomb {
+  box-shadow: 0px 0px 150px -45px rgba(19, 160, 134, 0.6);
+}
+#tomb:hover {
+  box-shadow: 0px 0px 120px -55px rgba(19, 160, 134, 0.6);
+}
+
+.tomb_back {
+  background: url("https://fsmedia.imgix.net/cd/c9/5e/ba/4817/4d9a/93f0/c776ec32ecbc/lara-crofts-neck-looks-unnatural-in-the-new-poster-for-tomb-raider.png");
+}
+
+#ave {
+  box-shadow: 0px 0px 150px -45px rgba(199, 147, 75, 0.7);
+  margin-bottom: 200px;
+}
+#ave:hover {
+  box-shadow: 0px 0px 120px -55px rgba(199, 147, 75, 0.7);
+}
+
+.ave_back {
+  background: url("https://www.gannett-cdn.com/-mm-/c03fd140debe8ad4c05cf81a5cad7ad61a12ce52/c=0-1580-2985-3266&r=x803&c=1600x800/local/-/media/2017/06/09/USATODAY/USATODAY/636326272873599176-Black-Panther-Teaser.jpg");
+}
+
+/*2*/
+button{
+  background: none;
+  border: none;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.main-header{
+  color: lawngreen;
+  display: block;
+  margin-left: 50px;
+  text-align: center;
+}
+
+.movie-slider{
+  position: relative;
+}
+
+.movie-slider::before{
+  content: '';
+  height: 438px;
+  width: 100px;
+  display: block;
+  background: linear-gradient(to right, black, transparent);
+  position: absolute;
+  left: 0;
+  z-index: 1;
+}
+
+.movie-slider::after{
+  content: '';
+  height: 438px;
+  width: 100px;
+  display: block;
+  background: linear-gradient(to left, black, transparent);
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
+}
+
+.movie-list{
+  margin: 30px 0;
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: scroll;
+}
+
+.movie-list::-webkit-scrollbar {
+  width: 15px;
+  height: 10px;
+}
+ 
+.movie-list::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+ 
+.movie-list::-webkit-scrollbar-thumb {
+  background-color: rgb(61, 61, 61);
+  outline: 1px solid slategrey;
+  border-radius: 50px;
+}
+
+.movie-card{
+  background-color: #cee4fd;
+  border-radius: 10px;
+  width: 182px;
+  box-shadow: 0px 5px 10px rgb(17, 17, 17);
+  cursor: pointer;
+  margin: 20px 15px;
+  position: relative;
+  transition: all 1s;
+}
+
+.movie-card:hover{
+  box-shadow: 0px 10px 20px #000000;
+  transform:  scale(1.08);
+  
+}
+
+.movie-poster{
+  border-radius: 10px 10px 0px 0px;
+}
+
+.movie-info{
+  padding: 15px 10px;
+}
+
+.movie-title{
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: -1px;
+  margin-bottom: 38px;
+  text-align: center;
+}
+
+.btn-watch{
+  font-weight: 700;
+  background-color: #005dff;
+  margin-left: 14px;
+  padding: 8px 20px;
+  border-radius: 50px;
+  border: 3px solid transparent;
+  color: white;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 10px;
+  
+}
