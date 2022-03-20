@@ -95,18 +95,6 @@ span.text {
   }
 }
 /* Number Counter Galang */
-    background-color: transparent;
-    color: white;
-}
-
-.tombol-carousel {
-    top : 60px;
-    bottom : 60px;
-}
-
-.space-container {
-    margin-top: 40px;
-}
 
 .card_h-100_navigasi img{
     width: 350px;
