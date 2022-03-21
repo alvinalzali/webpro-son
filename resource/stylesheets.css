@@ -474,5 +474,20 @@ button{
   position: absolute;
   bottom: 0;
   margin-bottom: 10px;
+}
+
+footer {
+  position: relative;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin-top: 5%;
+  padding: 1rem;
+  background-color: black;
+  text-align: center;
+}
+
+footer .footer-copyright {
+  color: #fff;
   
 }
